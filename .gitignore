@@ -1,0 +1,16 @@
+.superpowers/
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+*.csproj
+*.sln
+*.tmp
+*.log
+.vs/
+.vscode/
+UserSettings/

@@ -1,10 +1,12 @@
 {
-    "name": "Veil.Input",
+    "name": "Veil.Editor",
     "rootNamespace": "",
     "references": [
-        "Unity.InputSystem"
+        "Veil.Runtime"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

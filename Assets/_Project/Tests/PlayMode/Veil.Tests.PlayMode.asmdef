@@ -1,5 +1,5 @@
 {
-    "name": "Veil.Tests.EditMode",
+    "name": "Veil.Tests.PlayMode",
     "rootNamespace": "",
     "references": [
         "Veil.Runtime",
@@ -8,9 +8,7 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,

@@ -87,6 +87,27 @@ Movement feel is playtest-driven, not automated, for M1. Playtest checklist:
 
 Where feasible, state and action logic is kept free of `MonoBehaviour` dependencies (plain C# classes driven by the motor/state machine), so Unity Test Framework unit tests can be added later without requiring a refactor. No automated tests are required to ship M1.
 
+## Animation Philosophy
+
+Placeholder animations are acceptable for M1 — no final animation work is in scope. Movement responsiveness always takes priority over animation accuracy: if an animation (root motion, blend transition, IK) makes controls feel sluggish or adds input latency, responsiveness wins and the animation is cut back or replaced. This applies directly to the CharacterMotor/ActionController split above — the motor must never wait on an animation event to resolve movement; animation is purely visual feedback layered on top of state that's already been decided.
+
+## Coding Standards
+
+- One responsibility per class.
+- Composition over inheritance.
+- No magic numbers — all tunables live in `MovementSettings`/`CameraSettings` ScriptableObjects, not literals in code.
+- XML documentation on all public APIs.
+- `[SerializeField]` private fields over public fields.
+- Keep classes under ~300 lines when practical; split further if a class is doing more than one job.
+- No premature optimization — but see Performance Target below for the hard constraints that apply from the start regardless.
+
+## Performance Target (M1)
+
+- 144 FPS sustained on mid-range hardware during M1 content.
+- Zero GC allocations during normal movement (steady-state Update/FixedUpdate loops for motor, states, actions, camera juice).
+- No per-frame LINQ. No unnecessary allocations in hot paths — this means avoiding `foreach` over interfaces that box, avoiding `new` in Update/FixedUpdate, caching component/reference lookups, and pooling where objects must be created at runtime (e.g. grab/throw effects).
+- These constraints apply to Motor, States, Actions, and CameraJuice specifically, since those tick every frame; one-shot/event-driven code (interaction prompts, UI events) is held to a looser standard since it doesn't run in the hot loop.
+
 ## Explicitly Out of Scope for M1
 
 - AI (patrols, detection, alert states)

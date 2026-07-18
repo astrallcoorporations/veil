@@ -9,7 +9,7 @@ namespace Veil.Movement.States
 
         public void Tick(MovementContext ctx)
         {
-            Vector3 wishDir = new Vector3(ctx.Input.MoveInput.x, 0f, ctx.Input.MoveInput.y).normalized;
+            Vector3 wishDir = (ctx.Forward * ctx.Input.MoveInput.y + ctx.Right * ctx.Input.MoveInput.x).normalized;
             Vector3 target = wishDir * ctx.Settings.CrouchSpeed;
             ctx.Velocity = Vector3.MoveTowards(ctx.Velocity, target, ctx.Settings.GroundAcceleration * ctx.DeltaTime);
         }

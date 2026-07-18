@@ -10,18 +10,18 @@ namespace Veil.Movement
     public sealed class MovementSettings : ScriptableObject
     {
         [Header("Locomotion Speeds (m/s)")]
-        [SerializeField] private float walkSpeed = 4f;
-        [SerializeField] private float sprintSpeed = 8f;
-        [SerializeField] private float crouchSpeed = 2.5f;
+        [SerializeField] private float walkSpeed = 5f;
+        [SerializeField] private float sprintSpeed = 9f;
+        [SerializeField] private float crouchSpeed = 3f;
 
         [Header("Acceleration")]
-        [SerializeField] private float groundAcceleration = 60f;
-        [SerializeField] private float airAcceleration = 20f;
-        [SerializeField] private float airControlFactor = 0.35f;
+        [SerializeField] private float groundAcceleration = 200f;
+        [SerializeField] private float airAcceleration = 50f;
+        [SerializeField] private float airControlFactor = 0.4f;
 
         [Header("Gravity")]
-        [SerializeField] private float gravity = -25f;
-        [SerializeField] private float maxFallSpeed = -40f;
+        [SerializeField] private float gravity = -30f;
+        [SerializeField] private float maxFallSpeed = -50f;
 
         [Header("Capsule")]
         [SerializeField] private float standingHeight = 1.8f;

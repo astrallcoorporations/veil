@@ -10,7 +10,7 @@ namespace Veil.Movement.States
         public void Tick(MovementContext ctx)
         {
             float speed = ctx.Input.SprintHeld ? ctx.Settings.SprintSpeed : ctx.Settings.WalkSpeed;
-            Vector3 wishDir = new Vector3(ctx.Input.MoveInput.x, 0f, ctx.Input.MoveInput.y).normalized;
+            Vector3 wishDir = (ctx.Forward * ctx.Input.MoveInput.y + ctx.Right * ctx.Input.MoveInput.x).normalized;
             Vector3 target = wishDir * speed;
             ctx.Velocity = Vector3.MoveTowards(ctx.Velocity, target, ctx.Settings.GroundAcceleration * ctx.DeltaTime);
         }

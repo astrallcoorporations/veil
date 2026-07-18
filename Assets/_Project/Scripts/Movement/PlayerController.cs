@@ -62,12 +62,16 @@ namespace Veil.Movement
         private void Update()
         {
             _ctx.DeltaTime = Time.deltaTime;
-            TickMovement(_ctx, _stateMachine, _actionController, Time.deltaTime);
-            motor.Move(_ctx.Velocity, Time.deltaTime);
 
             Vector2 lookDelta = input.LookInput;
             transform.Rotate(Vector3.up, lookDelta.x * mouseSensitivity);
             _pitch = Mathf.Clamp(_pitch - lookDelta.y * mouseSensitivity, -89f, 89f);
+
+            _ctx.Forward = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
+            _ctx.Right = Vector3.ProjectOnPlane(transform.right, Vector3.up).normalized;
+
+            TickMovement(_ctx, _stateMachine, _actionController, Time.deltaTime);
+            motor.Move(_ctx.Velocity, Time.deltaTime);
 
             if (cameraController != null)
             {

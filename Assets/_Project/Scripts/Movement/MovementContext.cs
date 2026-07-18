@@ -21,6 +21,12 @@ namespace Veil.Movement
         /// <summary>Current desired velocity; states/actions read and write this each tick.</summary>
         public Vector3 Velocity;
 
+        /// <summary>Player's forward direction projected onto the ground plane, set by PlayerController each frame.</summary>
+        public Vector3 Forward;
+
+        /// <summary>Player's right direction projected onto the ground plane, set by PlayerController each frame.</summary>
+        public Vector3 Right;
+
         /// <summary>Time elapsed since the last tick, in seconds.</summary>
         public float DeltaTime;
 

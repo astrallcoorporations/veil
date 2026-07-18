@@ -20,7 +20,7 @@ namespace Veil.Movement.Actions
             if (!ctx.Input.SprintHeld || !ctx.Input.CrouchHeld) return false;
 
             Vector3 planar = new Vector3(ctx.Velocity.x, 0f, ctx.Velocity.z);
-            return planar.magnitude >= ctx.Settings.MinSlideSpeed;
+            return planar.magnitude >= ctx.Settings.WalkSpeed;
         }
 
         /// <summary>Begins the action.</summary>

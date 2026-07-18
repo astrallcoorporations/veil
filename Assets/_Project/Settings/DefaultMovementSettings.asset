@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbfb7915c5f7301489ff82b04a463239, type: 3}
   m_Name: DefaultMovementSettings
   m_EditorClassIdentifier: 
-  walkSpeed: 4
-  sprintSpeed: 8
-  crouchSpeed: 2.5
-  groundAcceleration: 60
-  airAcceleration: 20
-  airControlFactor: 0.35
-  gravity: -25
-  maxFallSpeed: -40
+  walkSpeed: 5
+  sprintSpeed: 9
+  crouchSpeed: 3
+  groundAcceleration: 200
+  airAcceleration: 50
+  airControlFactor: 0.4
+  gravity: -30
+  maxFallSpeed: -50
   standingHeight: 1.8
   crouchHeight: 1
   capsuleRadius: 0.35

@@ -37,6 +37,7 @@ namespace Veil.Movement
             _actionController.RegisterAction(_slideAction);
             _actionController.RegisterAction(new VaultAction());
             _actionController.RegisterAction(new MantleAction());
+            _actionController.RegisterAction(new JumpAction());
         }
 
         private void OnEnable()

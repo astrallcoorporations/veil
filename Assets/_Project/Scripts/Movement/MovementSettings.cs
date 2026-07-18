@@ -39,6 +39,9 @@ namespace Veil.Movement
         [SerializeField] private float mantleMaxHeight = 2.2f;
         [SerializeField] private float ledgeDetectRange = 0.8f;
 
+        [Header("Jump")]
+        [SerializeField] private float jumpHeight = 1.1f;
+
         public float WalkSpeed { get => walkSpeed; set => walkSpeed = value; }
         public float SprintSpeed { get => sprintSpeed; set => sprintSpeed = value; }
         public float CrouchSpeed { get => crouchSpeed; set => crouchSpeed = value; }
@@ -57,6 +60,7 @@ namespace Veil.Movement
         public float VaultMaxHeight => vaultMaxHeight;
         public float MantleMaxHeight => mantleMaxHeight;
         public float LedgeDetectRange => ledgeDetectRange;
+        public float JumpHeight => jumpHeight;
 
         /// <summary>Clamps interdependent values so an invalid Inspector edit can't produce broken movement.</summary>
         public void OnValidate()

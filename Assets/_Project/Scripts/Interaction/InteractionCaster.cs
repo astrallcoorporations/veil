@@ -16,6 +16,7 @@ namespace Veil.Interaction
         /// <summary>Fires when the focused interactable changes (including to/from null); a future UI binds its prompt here.</summary>
         public event Action<IInteractable> FocusChanged;
 
+        private readonly RaycastHit[] _hitBuffer = new RaycastHit[8];
         private IInteractable _current;
 
         private void OnEnable()
@@ -31,9 +32,15 @@ namespace Veil.Interaction
         private void Update()
         {
             IInteractable found = null;
-            if (Physics.SphereCast(eye.transform.position, sphereRadius, eye.transform.forward, out RaycastHit hit, range, interactableMask, QueryTriggerInteraction.Collide))
+            int count = Physics.SphereCastNonAlloc(eye.transform.position, sphereRadius, eye.transform.forward, _hitBuffer, range, interactableMask, QueryTriggerInteraction.Collide);
+            if (count > 0)
             {
-                found = hit.collider.GetComponentInParent<IInteractable>();
+                int closest = 0;
+                for (int i = 1; i < count; i++)
+                {
+                    if (_hitBuffer[i].distance < _hitBuffer[closest].distance) closest = i;
+                }
+                found = _hitBuffer[closest].collider.GetComponentInParent<IInteractable>();
             }
 
             if (!ReferenceEquals(found, _current))

@@ -14,8 +14,10 @@ namespace Veil.Interaction
 
         private void Awake() => _isOn = startsOn;
 
+        /// <inheritdoc />
         public string GetPrompt() => _isOn ? "Pull Lever (Off)" : "Pull Lever (On)";
 
+        /// <inheritdoc />
         public void Interact(GameObject interactor)
         {
             _isOn = !_isOn;

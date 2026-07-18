@@ -10,8 +10,10 @@ namespace Veil.Interaction
         private bool _isOpen;
         private float _currentAngle;
 
+        /// <inheritdoc />
         public string GetPrompt() => _isOpen ? "Close Door" : "Open Door";
 
+        /// <inheritdoc />
         public void Interact(GameObject interactor) => _isOpen = !_isOpen;
 
         private void Update()

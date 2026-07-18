@@ -7,8 +7,10 @@ namespace Veil.Interaction
     {
         [SerializeField] private string displayName = "Item";
 
+        /// <inheritdoc />
         public string GetPrompt() => $"Pick Up {displayName}";
 
+        /// <inheritdoc />
         public void Interact(GameObject interactor) => Destroy(gameObject);
     }
 }

@@ -80,16 +80,22 @@ namespace Veil.Movement
             Vector3 point1 = transform.position + _capsule.center - Vector3.up * (_capsule.height * 0.5f - _capsule.radius);
 
             int count = Physics.CapsuleCastNonAlloc(point0, point1, _capsule.radius, direction, _hitBuffer, maxDistance, collisionMask, QueryTriggerInteraction.Ignore);
-            if (count == 0)
+
+            // The cast shape is identical to (and overlaps) the motor's own CapsuleCollider, so the
+            // buffer always contains a self-hit at distance 0. It must be excluded when picking the
+            // closest result, or the motor perpetually "collides" with itself: grounding becomes
+            // unconditionally true and Move() can never make forward progress.
+            int closest = -1;
+            for (int i = 0; i < count; i++)
+            {
+                if (_hitBuffer[i].collider == _capsule) continue;
+                if (closest == -1 || _hitBuffer[i].distance < _hitBuffer[closest].distance) closest = i;
+            }
+
+            if (closest == -1)
             {
                 hit = default;
                 return false;
-            }
-
-            int closest = 0;
-            for (int i = 1; i < count; i++)
-            {
-                if (_hitBuffer[i].distance < _hitBuffer[closest].distance) closest = i;
             }
             hit = _hitBuffer[closest];
             return true;

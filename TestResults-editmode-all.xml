@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="31" result="Passed" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.1826296">
+  <test-suite type="TestSuite" id="1000" name="game" fullname="game" runstate="Runnable" testcasecount="31" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.182630" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1046" name="Veil.Tests.EditMode.dll" fullname="C:/Users/thats/OneDrive/Documents/game/Library/ScriptAssemblies/Veil.Tests.EditMode.dll" runstate="Runnable" testcasecount="31" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.176516" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13208" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1047" name="Veil" fullname="Veil" runstate="Runnable" testcasecount="31" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.176265" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1048" name="Tests" fullname="Veil.Tests" runstate="Runnable" testcasecount="31" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.176180" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1049" name="EditMode" fullname="Veil.Tests.EditMode" runstate="Runnable" testcasecount="31" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.175931" total="31" passed="31" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1003" name="ActionControllerTests" fullname="Veil.Tests.EditMode.ActionControllerTests" classname="Veil.Tests.EditMode.ActionControllerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.023326" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1005" name="ActiveAction_BlocksLowerPriorityFromInterrupting" fullname="Veil.Tests.EditMode.ActionControllerTests.ActiveAction_BlocksLowerPriorityFromInterrupting" methodname="ActiveAction_BlocksLowerPriorityFromInterrupting" classname="Veil.Tests.EditMode.ActionControllerTests" runstate="Runnable" seed="169468099" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.012735" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="ExecutesHighestPriorityValidAction" fullname="Veil.Tests.EditMode.ActionControllerTests.ExecutesHighestPriorityValidAction" methodname="ExecutesHighestPriorityValidAction" classname="Veil.Tests.EditMode.ActionControllerTests" runstate="Runnable" seed="785421295" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000266" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1006" name="CameraJuiceTests" fullname="Veil.Tests.EditMode.CameraJuiceTests" classname="Veil.Tests.EditMode.CameraJuiceTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.007536" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1010" name="CalculateBobOffset_IsAllocationFree" fullname="Veil.Tests.EditMode.CameraJuiceTests.CalculateBobOffset_IsAllocationFree" methodname="CalculateBobOffset_IsAllocationFree" classname="Veil.Tests.EditMode.CameraJuiceTests" runstate="Runnable" seed="2146862140" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.005580" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="CalculateFovKick_MaxSpeed_ReturnsBasePlusMaxKick" fullname="Veil.Tests.EditMode.CameraJuiceTests.CalculateFovKick_MaxSpeed_ReturnsBasePlusMaxKick" methodname="CalculateFovKick_MaxSpeed_ReturnsBasePlusMaxKick" classname="Veil.Tests.EditMode.CameraJuiceTests" runstate="Runnable" seed="2019874318" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000960" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="CalculateFovKick_ZeroSpeed_ReturnsBaseFov" fullname="Veil.Tests.EditMode.CameraJuiceTests.CalculateFovKick_ZeroSpeed_ReturnsBaseFov" methodname="CalculateFovKick_ZeroSpeed_ReturnsBaseFov" classname="Veil.Tests.EditMode.CameraJuiceTests" runstate="Runnable" seed="797854146" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000109" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="CalculateTilt_Sliding_ReturnsSlideTilt" fullname="Veil.Tests.EditMode.CameraJuiceTests.CalculateTilt_Sliding_ReturnsSlideTilt" methodname="CalculateTilt_Sliding_ReturnsSlideTilt" classname="Veil.Tests.EditMode.CameraJuiceTests" runstate="Runnable" seed="252415355" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000129" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1011" name="GrabPhysicsMathTests" fullname="Veil.Tests.EditMode.GrabPhysicsMathTests" classname="Veil.Tests.EditMode.GrabPhysicsMathTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.003713" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1013" name="ComputeHoldVelocity_AtTarget_WithZeroVelocity_ReturnsNearZero" fullname="Veil.Tests.EditMode.GrabPhysicsMathTests.ComputeHoldVelocity_AtTarget_WithZeroVelocity_ReturnsNearZero" methodname="ComputeHoldVelocity_AtTarget_WithZeroVelocity_ReturnsNearZero" classname="Veil.Tests.EditMode.GrabPhysicsMathTests" runstate="Runnable" seed="2116328633" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000549" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="ComputeHoldVelocity_MovesTowardTarget" fullname="Veil.Tests.EditMode.GrabPhysicsMathTests.ComputeHoldVelocity_MovesTowardTarget" methodname="ComputeHoldVelocity_MovesTowardTarget" classname="Veil.Tests.EditMode.GrabPhysicsMathTests" runstate="Runnable" seed="1894059566" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.002619" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1014" name="InputReaderTests" fullname="Veil.Tests.EditMode.InputReaderTests" classname="Veil.Tests.EditMode.InputReaderTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.103640" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1016" name="JumpVaultPressed_FiresOnce_WhenButtonPressed" fullname="Veil.Tests.EditMode.InputReaderTests.JumpVaultPressed_FiresOnce_WhenButtonPressed" methodname="JumpVaultPressed_FiresOnce_WhenButtonPressed" classname="Veil.Tests.EditMode.InputReaderTests" runstate="Runnable" seed="1058316249" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.093338" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="MoveInput_DefaultsToZero" fullname="Veil.Tests.EditMode.InputReaderTests.MoveInput_DefaultsToZero" methodname="MoveInput_DefaultsToZero" classname="Veil.Tests.EditMode.InputReaderTests" runstate="Runnable" seed="21807664" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.008829" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1017" name="LedgeDetectorTests" fullname="Veil.Tests.EditMode.LedgeDetectorTests" classname="Veil.Tests.EditMode.LedgeDetectorTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.002512" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1019" name="Decide_LowLedge_ReturnsVault" fullname="Veil.Tests.EditMode.LedgeDetectorTests.Decide_LowLedge_ReturnsVault" methodname="Decide_LowLedge_ReturnsVault" classname="Veil.Tests.EditMode.LedgeDetectorTests" runstate="Runnable" seed="409492622" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000441" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="Decide_MidLedge_ReturnsMantle" fullname="Veil.Tests.EditMode.LedgeDetectorTests.Decide_MidLedge_ReturnsMantle" methodname="Decide_MidLedge_ReturnsMantle" classname="Veil.Tests.EditMode.LedgeDetectorTests" runstate="Runnable" seed="584100762" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000164" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="Decide_NoForwardHit_ReturnsNone" fullname="Veil.Tests.EditMode.LedgeDetectorTests.Decide_NoForwardHit_ReturnsNone" methodname="Decide_NoForwardHit_ReturnsNone" classname="Veil.Tests.EditMode.LedgeDetectorTests" runstate="Runnable" seed="549222886" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000138" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="Decide_TooHigh_ReturnsNone" fullname="Veil.Tests.EditMode.LedgeDetectorTests.Decide_TooHigh_ReturnsNone" methodname="Decide_TooHigh_ReturnsNone" classname="Veil.Tests.EditMode.LedgeDetectorTests" runstate="Runnable" seed="592078550" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1022" name="LevelBuilderTests" fullname="Veil.Tests.EditMode.LevelBuilderTests" classname="Veil.Tests.EditMode.LevelBuilderTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.021648" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1023" name="Build_CreatesRequiredGreyboxElements" fullname="Veil.Tests.EditMode.LevelBuilderTests.Build_CreatesRequiredGreyboxElements" methodname="Build_CreatesRequiredGreyboxElements" classname="Veil.Tests.EditMode.LevelBuilderTests" runstate="Runnable" seed="1490829886" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.020980" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1024" name="MotorMathTests" fullname="Veil.Tests.EditMode.MotorMathTests" classname="Veil.Tests.EditMode.MotorMathTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.003209" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1028" name="ComputeSlideVelocity_DecaysTowardMinSpeed" fullname="Veil.Tests.EditMode.MotorMathTests.ComputeSlideVelocity_DecaysTowardMinSpeed" methodname="ComputeSlideVelocity_DecaysTowardMinSpeed" classname="Veil.Tests.EditMode.MotorMathTests" runstate="Runnable" seed="442623034" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000855" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="IsWalkable_FlatGround_ReturnsTrue" fullname="Veil.Tests.EditMode.MotorMathTests.IsWalkable_FlatGround_ReturnsTrue" methodname="IsWalkable_FlatGround_ReturnsTrue" classname="Veil.Tests.EditMode.MotorMathTests" runstate="Runnable" seed="9472357" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000367" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="IsWalkable_VerticalWall_ReturnsFalse" fullname="Veil.Tests.EditMode.MotorMathTests.IsWalkable_VerticalWall_ReturnsFalse" methodname="IsWalkable_VerticalWall_ReturnsFalse" classname="Veil.Tests.EditMode.MotorMathTests" runstate="Runnable" seed="1955119688" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000270" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="SlideAlongSurface_IsAllocationFree" fullname="Veil.Tests.EditMode.MotorMathTests.SlideAlongSurface_IsAllocationFree" methodname="SlideAlongSurface_IsAllocationFree" classname="Veil.Tests.EditMode.MotorMathTests" runstate="Runnable" seed="1538522874" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000414" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="SlideAlongSurface_RemovesVelocityIntoWall" fullname="Veil.Tests.EditMode.MotorMathTests.SlideAlongSurface_RemovesVelocityIntoWall" methodname="SlideAlongSurface_RemovesVelocityIntoWall" classname="Veil.Tests.EditMode.MotorMathTests" runstate="Runnable" seed="2094203990" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000170" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1030" name="MovementSettingsTests" fullname="Veil.Tests.EditMode.MovementSettingsTests" classname="Veil.Tests.EditMode.MovementSettingsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000946" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1031" name="OnValidate_ClampsCrouchSpeedBelowSprintSpeed" fullname="Veil.Tests.EditMode.MovementSettingsTests.OnValidate_ClampsCrouchSpeedBelowSprintSpeed" methodname="OnValidate_ClampsCrouchSpeedBelowSprintSpeed" classname="Veil.Tests.EditMode.MovementSettingsTests" runstate="Runnable" seed="1707787115" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000373" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="OnValidate_ClampsMaxSlopeAngleTo0_90" fullname="Veil.Tests.EditMode.MovementSettingsTests.OnValidate_ClampsMaxSlopeAngleTo0_90" methodname="OnValidate_ClampsMaxSlopeAngleTo0_90" classname="Veil.Tests.EditMode.MovementSettingsTests" runstate="Runnable" seed="483702374" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000149" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1033" name="MovementStateMachineTests" fullname="Veil.Tests.EditMode.MovementStateMachineTests" classname="Veil.Tests.EditMode.MovementStateMachineTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.003140" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1034" name="StartsInGroundedState" fullname="Veil.Tests.EditMode.MovementStateMachineTests.StartsInGroundedState" methodname="StartsInGroundedState" classname="Veil.Tests.EditMode.MovementStateMachineTests" runstate="Runnable" seed="197674398" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.001822" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1035" name="TransitionsToAir_WhenMotorLeavesGround" fullname="Veil.Tests.EditMode.MovementStateMachineTests.TransitionsToAir_WhenMotorLeavesGround" methodname="TransitionsToAir_WhenMotorLeavesGround" classname="Veil.Tests.EditMode.MovementStateMachineTests" runstate="Runnable" seed="833992156" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000792" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1036" name="NearestInteractableSelectorTests" fullname="Veil.Tests.EditMode.NearestInteractableSelectorTests" classname="Veil.Tests.EditMode.NearestInteractableSelectorTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.001688" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1038" name="SelectNearest_EmptyList_ReturnsNull" fullname="Veil.Tests.EditMode.NearestInteractableSelectorTests.SelectNearest_EmptyList_ReturnsNull" methodname="SelectNearest_EmptyList_ReturnsNull" classname="Veil.Tests.EditMode.NearestInteractableSelectorTests" runstate="Runnable" seed="304622940" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000517" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="SelectNearest_ReturnsClosestByDistance" fullname="Veil.Tests.EditMode.NearestInteractableSelectorTests.SelectNearest_ReturnsClosestByDistance" methodname="SelectNearest_ReturnsClosestByDistance" classname="Veil.Tests.EditMode.NearestInteractableSelectorTests" runstate="Runnable" seed="1694811977" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000596" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1039" name="PlayerControllerTests" fullname="Veil.Tests.EditMode.PlayerControllerTests" classname="Veil.Tests.EditMode.PlayerControllerTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000657" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1040" name="Tick_WithNoActiveAction_LetsStateMachineDriveVelocity" fullname="Veil.Tests.EditMode.PlayerControllerTests.Tick_WithNoActiveAction_LetsStateMachineDriveVelocity" methodname="Tick_WithNoActiveAction_LetsStateMachineDriveVelocity" classname="Veil.Tests.EditMode.PlayerControllerTests" runstate="Runnable" seed="13658751" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000356" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1041" name="SlideActionTests" fullname="Veil.Tests.EditMode.SlideActionTests" classname="Veil.Tests.EditMode.SlideActionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.002217" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1042" name="CanExecute_False_WhenAirborne" fullname="Veil.Tests.EditMode.SlideActionTests.CanExecute_False_WhenAirborne" methodname="CanExecute_False_WhenAirborne" classname="Veil.Tests.EditMode.SlideActionTests" runstate="Runnable" seed="1416945996" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000638" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1043" name="CanExecute_True_WhenGroundedAndFastEnough" fullname="Veil.Tests.EditMode.SlideActionTests.CanExecute_True_WhenGroundedAndFastEnough" methodname="CanExecute_True_WhenGroundedAndFastEnough" classname="Veil.Tests.EditMode.SlideActionTests" runstate="Runnable" seed="1187010236" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000174" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1044" name="Execute_SetsIsActiveTrue" fullname="Veil.Tests.EditMode.SlideActionTests.Execute_SetsIsActiveTrue" methodname="Execute_SetsIsActiveTrue" classname="Veil.Tests.EditMode.SlideActionTests" runstate="Runnable" seed="896676332" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000380" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1045" name="Tick_EndsSlide_WhenSpeedDropsBelowMinimum" fullname="Veil.Tests.EditMode.SlideActionTests.Tick_EndsSlide_WhenSpeedDropsBelowMinimum" methodname="Tick_EndsSlide_WhenSpeedDropsBelowMinimum" classname="Veil.Tests.EditMode.SlideActionTests" runstate="Runnable" seed="1769242772" result="Passed" start-time="2026-07-18 11:17:38Z" end-time="2026-07-18 11:17:38Z" duration="0.000354" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/thats/AppData/LocalLow/DefaultCompany/game\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

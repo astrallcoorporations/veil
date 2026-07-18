@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:55Z" duration="4.8302764">
+  <test-suite type="TestSuite" id="1015" name="game" fullname="game" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:55Z" duration="4.830276" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1011" name="Veil.Tests.PlayMode.dll" fullname="C:/Users/thats/OneDrive/Documents/game/Library/ScriptAssemblies/Veil.Tests.PlayMode.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:55Z" duration="4.822297" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="2640" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1012" name="Veil" fullname="Veil" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:55Z" duration="4.821728" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1013" name="Tests" fullname="Veil.Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:55Z" duration="4.821517" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1014" name="PlayMode" fullname="Veil.Tests.PlayMode" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:55Z" duration="4.821276" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1004" name="CharacterMotorPlayModeTests" fullname="Veil.Tests.PlayMode.CharacterMotorPlayModeTests" classname="Veil.Tests.PlayMode.CharacterMotorPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:54Z" duration="3.617853" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1005" name="Motor_FallingOntoGround_ReportsGroundedAndLandsAtSurface" fullname="Veil.Tests.PlayMode.CharacterMotorPlayModeTests.Motor_FallingOntoGround_ReportsGroundedAndLandsAtSurface" methodname="Motor_FallingOntoGround_ReportsGroundedAndLandsAtSurface" classname="Veil.Tests.PlayMode.CharacterMotorPlayModeTests" runstate="Runnable" seed="883513353" result="Passed" start-time="2026-07-18 11:18:50Z" end-time="2026-07-18 11:18:52Z" duration="1.221077" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="Motor_MovingTowardWall_StopsAtWallAndDoesNotPassThrough" fullname="Veil.Tests.PlayMode.CharacterMotorPlayModeTests.Motor_MovingTowardWall_StopsAtWallAndDoesNotPassThrough" methodname="Motor_MovingTowardWall_StopsAtWallAndDoesNotPassThrough" classname="Veil.Tests.PlayMode.CharacterMotorPlayModeTests" runstate="Runnable" seed="273107339" result="Passed" start-time="2026-07-18 11:18:52Z" end-time="2026-07-18 11:18:54Z" duration="2.385902" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1007" name="GrabControllerPlayModeTests" fullname="Veil.Tests.PlayMode.GrabControllerPlayModeTests" classname="Veil.Tests.PlayMode.GrabControllerPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-07-18 11:18:54Z" end-time="2026-07-18 11:18:55Z" duration="1.198255" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1008" name="HeldObject_ConvergesTowardHoldPoint" fullname="Veil.Tests.PlayMode.GrabControllerPlayModeTests.HeldObject_ConvergesTowardHoldPoint" methodname="HeldObject_ConvergesTowardHoldPoint" classname="Veil.Tests.PlayMode.GrabControllerPlayModeTests" runstate="Runnable" seed="72238754" result="Passed" start-time="2026-07-18 11:18:54Z" end-time="2026-07-18 11:18:55Z" duration="1.197312" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1009" name="VaultMantlePlayModeTests" fullname="Veil.Tests.PlayMode.VaultMantlePlayModeTests" classname="Veil.Tests.PlayMode.VaultMantlePlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-07-18 11:18:55Z" end-time="2026-07-18 11:18:55Z" duration="0.003924" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1010" name="VaultAction_CanExecute_WhenLowObstacleAhead" fullname="Veil.Tests.PlayMode.VaultMantlePlayModeTests.VaultAction_CanExecute_WhenLowObstacleAhead" methodname="VaultAction_CanExecute_WhenLowObstacleAhead" classname="Veil.Tests.PlayMode.VaultMantlePlayModeTests" runstate="Runnable" seed="987182583" result="Passed" start-time="2026-07-18 11:18:55Z" end-time="2026-07-18 11:18:55Z" duration="0.003071" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/thats/AppData/LocalLow/DefaultCompany/game\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

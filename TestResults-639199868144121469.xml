@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.0323971">
+  <test-suite type="TestSuite" id="1000" name="game" fullname="game" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.032397" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1044" name="Veil.Tests.EditMode.dll" fullname="C:/Users/thats/OneDrive/Documents/game/Library/ScriptAssemblies/Veil.Tests.EditMode.dll" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.025169" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="20380" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1045" name="Veil" fullname="Veil" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.024628" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1046" name="Tests" fullname="Veil.Tests" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.024338" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1047" name="EditMode" fullname="Veil.Tests.EditMode" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.024015" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1022" name="LevelBuilderTests" fullname="Veil.Tests.EditMode.LevelBuilderTests" classname="Veil.Tests.EditMode.LevelBuilderTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.022560" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1023" name="Build_CreatesRequiredGreyboxElements" fullname="Veil.Tests.EditMode.LevelBuilderTests.Build_CreatesRequiredGreyboxElements" methodname="Build_CreatesRequiredGreyboxElements" classname="Veil.Tests.EditMode.LevelBuilderTests" runstate="Runnable" seed="1084460856" result="Failed" label="Error" start-time="2026-07-18 10:23:34Z" end-time="2026-07-18 10:23:34Z" duration="0.011239" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Cannot create a new scene additively with an untitled scene unsaved.]]></message>
+                  <stack-trace><![CDATA[  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.NewScene_Injected(UnityEditor.SceneManagement.NewSceneSetup,UnityEditor.SceneManagement.NewSceneMode,UnityEngine.SceneManagement.Scene&)
+  at UnityEditor.SceneManagement.EditorSceneManager.NewScene (UnityEditor.SceneManagement.NewSceneSetup setup, UnityEditor.SceneManagement.NewSceneMode mode) [0x00000] in <f7f77592d61a4b95a583eb5e6a028924>:0 
+  at Veil.Tests.EditMode.LevelBuilderTests.Build_CreatesRequiredGreyboxElements () [0x00000] in C:\Users\thats\OneDrive\Documents\game\Assets\_Project\Tests\EditMode\LevelBuilderTests.cs:17 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <4449e9424e7e4d4d81a660907c68cb97>:0 ]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: C:/Users/thats/AppData/LocalLow/DefaultCompany/game\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

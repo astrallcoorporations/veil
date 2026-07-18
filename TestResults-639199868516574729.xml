@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.057857">
+  <test-suite type="TestSuite" id="1000" name="game" fullname="game" runstate="Runnable" testcasecount="30" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.057857" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1044" name="Veil.Tests.EditMode.dll" fullname="C:/Users/thats/OneDrive/Documents/game/Library/ScriptAssemblies/Veil.Tests.EditMode.dll" runstate="Runnable" testcasecount="30" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.050356" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="12120" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1045" name="Veil" fullname="Veil" runstate="Runnable" testcasecount="30" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.049790" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1046" name="Tests" fullname="Veil.Tests" runstate="Runnable" testcasecount="30" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.049528" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1047" name="EditMode" fullname="Veil.Tests.EditMode" runstate="Runnable" testcasecount="30" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.049251" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1022" name="LevelBuilderTests" fullname="Veil.Tests.EditMode.LevelBuilderTests" classname="Veil.Tests.EditMode.LevelBuilderTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.047865" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1023" name="Build_CreatesRequiredGreyboxElements" fullname="Veil.Tests.EditMode.LevelBuilderTests.Build_CreatesRequiredGreyboxElements" methodname="Build_CreatesRequiredGreyboxElements" classname="Veil.Tests.EditMode.LevelBuilderTests" runstate="Runnable" seed="2026681024" result="Passed" start-time="2026-07-18 10:24:11Z" end-time="2026-07-18 10:24:11Z" duration="0.036476" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/thats/AppData/LocalLow/DefaultCompany/game\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

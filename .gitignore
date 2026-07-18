@@ -14,3 +14,6 @@
 .vs/
 .vscode/
 UserSettings/
+TestResults*.xml
+unity_test_pid.txt
+/My project/

@@ -56,6 +56,29 @@ namespace Veil.LevelGen.Editor
             rb.mass = 5f;
             grabbableGo.AddComponent<GrabbableObject>();
             SceneManager.MoveGameObjectToScene(grabbableGo, scene);
+
+            var playerPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_Project/Prefabs/Player.prefab");
+            if (playerPrefab != null)
+            {
+                var player = (GameObject)PrefabUtility.InstantiatePrefab(playerPrefab);
+                player.transform.position = new Vector3(0f, 1f, -10f);
+                SceneManager.MoveGameObjectToScene(player, scene);
+            }
+        }
+
+        /// <summary>
+        /// Batchmode entry point: creates a fresh scene, builds the M1 greybox layout
+        /// (including the Player prefab when present), and saves it as
+        /// <c>Assets/_Project/Levels/M1_StealthSandbox.unity</c>.
+        /// </summary>
+        public static void BuildAndSaveM1Scene()
+        {
+            var scene = UnityEditor.SceneManagement.EditorSceneManager.NewScene(
+                UnityEditor.SceneManagement.NewSceneSetup.DefaultGameObjects,
+                UnityEditor.SceneManagement.NewSceneMode.Single);
+            Build(scene);
+            System.IO.Directory.CreateDirectory("Assets/_Project/Levels");
+            UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene, "Assets/_Project/Levels/M1_StealthSandbox.unity");
         }
 
         private static GameObject CreateBlock(string name, Vector3 scale, Vector3 position)

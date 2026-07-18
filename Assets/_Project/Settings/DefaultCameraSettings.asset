@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd43bc9c0568954b89be335e0ed96ee, type: 3}
+  m_Name: DefaultCameraSettings
+  m_EditorClassIdentifier: 
+  baseFov: 90
+  maxFovKick: 12
+  fovLerpSpeed: 8
+  maxLeanTiltDegrees: 4
+  slideTiltDegrees: 10
+  tiltLerpSpeed: 10
+  bobFrequency: 1.8
+  bobAmplitude: 0.05

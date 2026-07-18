@@ -12,6 +12,9 @@ namespace Veil.Movement.Actions
         private readonly List<IMovementAction> _actions = new List<IMovementAction>();
         private IMovementAction _active;
 
+        /// <summary>True while an action is currently active and blocking the state machine from driving velocity.</summary>
+        public bool HasActiveAction => _active != null;
+
         /// <summary>Registers an action to be considered for triggering.</summary>
         public void RegisterAction(IMovementAction action) => _actions.Add(action);
 

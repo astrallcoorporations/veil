@@ -10,11 +10,22 @@ namespace Veil.Interaction
         private bool _isOpen;
         private float _currentAngle;
 
+        /// <summary>Whether the door is currently in its open state.</summary>
+        public bool IsOpen => _isOpen;
+
         /// <inheritdoc />
         public string GetPrompt() => _isOpen ? "Close Door" : "Open Door";
 
         /// <inheritdoc />
         public void Interact(GameObject interactor) => _isOpen = !_isOpen;
+
+        /// <summary>
+        /// Directly sets the door's open state, e.g. from a wired puzzle component like
+        /// <see cref="DoorLeverLink"/>. Independent of <see cref="Interact"/> — both simply
+        /// assign <c>_isOpen</c>, so the door still opens/closes on its own interaction too.
+        /// </summary>
+        /// <param name="open">True to open the door, false to close it.</param>
+        public void SetOpen(bool open) => _isOpen = open;
 
         private void Update()
         {

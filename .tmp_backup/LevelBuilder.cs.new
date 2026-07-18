@@ -119,21 +119,11 @@ namespace Veil.LevelGen.Editor
             var leverGo = CreateBlockInScene(scene, "Lever", new Vector3(0.2f, 0.5f, 0.2f), new Vector3(-2f, 2.75f, 13f));
             var lever = leverGo.AddComponent<Lever>();
 
-            // DoorLeverLink.OnEnable subscribes to lever.StateChanged, and AddComponent fires
-            // OnEnable synchronously on an active GameObject -- before the SerializedObject
-            // assignment below would have a chance to populate the fields it reads. Adding the
-            // component while the GameObject is inactive, wiring the fields, then activating it
-            // ensures OnEnable runs only once both references are already set, so the
-            // subscription actually takes.
-            var linkGo = new GameObject("DoorLeverLink");
-            SceneManager.MoveGameObjectToScene(linkGo, scene);
-            linkGo.SetActive(false);
-            var link = linkGo.AddComponent<DoorLeverLink>();
+            var link = doorGo.AddComponent<DoorLeverLink>();
             var linkSerialized = new SerializedObject(link);
             linkSerialized.FindProperty("lever").objectReferenceValue = lever;
             linkSerialized.FindProperty("door").objectReferenceValue = door;
             linkSerialized.ApplyModifiedPropertiesWithoutUndo();
-            linkGo.SetActive(true);
         }
 
         /// <summary>

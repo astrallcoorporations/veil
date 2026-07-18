@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.0176704">
+  <test-suite type="TestSuite" id="1017" name="game" fullname="game" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.017670" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1013" name="Veil.Tests.PlayMode.dll" fullname="C:/Users/thats/OneDrive/Documents/game/Library/ScriptAssemblies/Veil.Tests.PlayMode.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.009317" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21632" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1014" name="Veil" fullname="Veil" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.008762" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1015" name="Tests" fullname="Veil.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.008446" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1016" name="PlayMode" fullname="Veil.Tests.PlayMode" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.008111" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1009" name="JumpActionPlayModeTests" fullname="Veil.Tests.PlayMode.JumpActionPlayModeTests" classname="Veil.Tests.PlayMode.JumpActionPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="3.006945" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1010" name="JumpAction_FromGround_ReachesApexNearJumpHeight" fullname="Veil.Tests.PlayMode.JumpActionPlayModeTests.JumpAction_FromGround_ReachesApexNearJumpHeight" methodname="JumpAction_FromGround_ReachesApexNearJumpHeight" classname="Veil.Tests.PlayMode.JumpActionPlayModeTests" runstate="Runnable" seed="551403813" result="Passed" start-time="2026-07-18 17:36:34Z" end-time="2026-07-18 17:36:37Z" duration="2.995861" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/thats/AppData/LocalLow/DefaultCompany/game\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -265,3 +265,4 @@ MonoBehaviour:
   input: {fileID: 11400000, guid: 6c922f3e7d0162849b7025a30afcbd24, type: 2}
   movementSettings: {fileID: 11400000, guid: 0263fdc4a7b8bd74990ecbc4335b9519, type: 2}
   cameraController: {fileID: 7227469159433380966}
+  mouseSensitivity: 0.04

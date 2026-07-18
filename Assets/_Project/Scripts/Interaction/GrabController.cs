@@ -17,6 +17,7 @@ namespace Veil.Interaction
         [SerializeField] private float damping = 12f;
         [SerializeField] private float throwForce = 8f;
         [SerializeField] private LayerMask grabbableMask = ~0;
+        [SerializeField] private float grabCastRadius = 0.2f;
 
         private IGrabbable _held;
 
@@ -49,7 +50,7 @@ namespace Veil.Interaction
                 return;
             }
 
-            if (Physics.SphereCast(transform.position, 0.2f, transform.forward, out RaycastHit hit, grabRange, grabbableMask))
+            if (Physics.SphereCast(transform.position, grabCastRadius, transform.forward, out RaycastHit hit, grabRange, grabbableMask))
             {
                 var grabbable = hit.collider.GetComponentInParent<IGrabbable>();
                 if (grabbable != null) Grab(grabbable);

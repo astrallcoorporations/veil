@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "Veil.Runtime",
+        "Veil.Editor",
         "Unity.InputSystem",
         "Unity.InputSystem.TestFramework",
         "UnityEngine.TestRunner",

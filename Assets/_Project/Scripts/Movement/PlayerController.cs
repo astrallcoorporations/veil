@@ -19,11 +19,13 @@ namespace Veil.Movement
         [SerializeField] private InputReader input;
         [SerializeField] private MovementSettings movementSettings;
         [SerializeField] private CameraController cameraController;
+        [SerializeField] private float mouseSensitivity = 0.04f;
 
         private MovementContext _ctx;
         private MovementStateMachine _stateMachine;
         private ActionController _actionController;
         private SlideAction _slideAction;
+        private float _pitch;
 
         private void Awake()
         {
@@ -42,6 +44,8 @@ namespace Veil.Movement
             input.Enable();
             input.JumpVaultPressed += OnActionTriggerPressed;
             input.SlidePressed += OnActionTriggerPressed;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         private void OnDisable()
@@ -49,6 +53,8 @@ namespace Veil.Movement
             input.JumpVaultPressed -= OnActionTriggerPressed;
             input.SlidePressed -= OnActionTriggerPressed;
             input.Disable();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         private void OnActionTriggerPressed() => _actionController.TryTriggerBestAction(_ctx, _stateMachine.Current);
@@ -59,9 +65,13 @@ namespace Veil.Movement
             TickMovement(_ctx, _stateMachine, _actionController, Time.deltaTime);
             motor.Move(_ctx.Velocity, Time.deltaTime);
 
+            Vector2 lookDelta = input.LookInput;
+            transform.Rotate(Vector3.up, lookDelta.x * mouseSensitivity);
+            _pitch = Mathf.Clamp(_pitch - lookDelta.y * mouseSensitivity, -89f, 89f);
+
             if (cameraController != null)
             {
-                cameraController.ApplyTilt(input.MoveInput.x, _slideAction.IsActive);
+                cameraController.ApplyLook(_pitch, input.MoveInput.x, _slideAction.IsActive);
             }
         }
 

@@ -12,10 +12,17 @@ namespace Veil.Camera
         [SerializeField] private float sprintSpeedForJuice = 8f;
 
         private float _time;
+        private Vector3 _baseLocalPosition;
 
         private void Reset()
         {
             targetCamera = GetComponentInChildren<UnityEngine.Camera>();
+        }
+
+        private void Awake()
+        {
+            if (targetCamera != null)
+                _baseLocalPosition = targetCamera.transform.localPosition;
         }
 
         private void Update()
@@ -29,17 +36,17 @@ namespace Veil.Camera
             targetCamera.fieldOfView = Mathf.Lerp(targetCamera.fieldOfView, targetFov, settings.FovLerpSpeed * Time.deltaTime);
 
             Vector3 bob = CameraJuice.CalculateBobOffset(_time, speed, settings.BobFrequency, settings.BobAmplitude);
-            targetCamera.transform.localPosition = bob;
+            targetCamera.transform.localPosition = _baseLocalPosition + bob;
         }
 
-        /// <summary>Applies roll tilt; called separately so slide state (owned by ActionController) can drive it without CameraController depending on Actions.</summary>
-        public void ApplyTilt(float horizontalInput, bool isSliding)
+        /// <summary>Applies pitch (from mouse look) and roll tilt (from strafe/slide) in one rotation write so they don't fight.</summary>
+        public void ApplyLook(float pitch, float horizontalInput, bool isSliding)
         {
             float targetTilt = CameraJuice.CalculateTilt(horizontalInput, settings.MaxLeanTiltDegrees, isSliding, settings.SlideTiltDegrees);
-            Vector3 euler = targetCamera.transform.localEulerAngles;
-            float currentZ = euler.z > 180f ? euler.z - 360f : euler.z;
+            float currentZ = targetCamera.transform.localEulerAngles.z;
+            if (currentZ > 180f) currentZ -= 360f;
             float newZ = Mathf.Lerp(currentZ, targetTilt, settings.TiltLerpSpeed * Time.deltaTime);
-            targetCamera.transform.localRotation = Quaternion.Euler(euler.x, euler.y, newZ);
+            targetCamera.transform.localRotation = Quaternion.Euler(pitch, 0f, newZ);
         }
     }
 }
